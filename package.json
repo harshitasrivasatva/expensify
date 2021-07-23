@@ -6,13 +6,15 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-cli serve --mode development",
-    "serve": "live-server public",
+    "serve": "live-server public/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
-    "test": "cross-env NODE_ENV=test jest --watchAll --congif=jest.config.json"
+    "test": "cross-env NODE_ENV=test jest --watchAll --congif=jest.config.json",
+    "heroku-postbuild" : "npm run build:prod"
   },
   "keywords": [],
   "author": "",
