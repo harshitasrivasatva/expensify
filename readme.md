@@ -3,7 +3,8 @@ https://i.gifer.com/7TwJ.gif
 https://media.giphy.com/media/3o6UB4zAURoccSY000/giphy.gif
 https://media.giphy.com/media/JsKIF8VcNgUujQTgtH/giphy.gif
 
-
+react-scripts build
+"start": "webpack-cli serve --mode development",
 # Git Commands
 
 git init - Create a new git repo
